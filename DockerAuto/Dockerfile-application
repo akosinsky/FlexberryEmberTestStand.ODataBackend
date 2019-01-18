@@ -15,8 +15,8 @@ RUN	git clone --depth=50 --branch=$TAG https://github.com/akosinsky/FlexberryEmb
 	npm install ; \
 	echo "#bower install  --allow-root" ; \
 	bower install  --allow-root ; \
-	echo "#ember install ember-flexberry" ; \
-	ember install ember-flexberry ; \
+	echo "#ember install ember-flexberry@2.0.0" ; \
+	ember install ember-flexberry@2.0.0 ; \
 	echo "#npm install" ; \
 	npm install ; \
 	echo "#bower install  --allow-root" ; \
