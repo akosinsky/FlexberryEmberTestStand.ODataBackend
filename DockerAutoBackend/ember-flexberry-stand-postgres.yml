@@ -1,0 +1,15 @@
+﻿version: '3'
+services:
+  app-postgres-db:
+    image: "akosinsky/ember-flexberry-stand-postgres:latest"
+    volumes:
+      - PostgresEmberFlexberryStandDB:/var/lib/pgsql/data/
+    ports:
+     - "5432:5432"
+  FlexberryApp:
+    image: "akosinsky/ember-flexberry-stand-backend:latest"
+    ports:
+     - "6500:6500"
+
+volumes:
+  PostgresEmberFlexberryStandDB: 
