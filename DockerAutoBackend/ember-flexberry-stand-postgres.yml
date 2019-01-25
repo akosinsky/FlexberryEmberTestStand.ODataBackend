@@ -7,7 +7,7 @@ services:
     ports:
      - "5432:5432"
   FlexberryApp:
-    image: "akosinsky/ember-flexberry-stand-backend:latest"
+    image: "akosinsky/ember-flexberry-stand-application:latest"
     ports:
      - "6500:6500"
 
